@@ -10,6 +10,12 @@ systemProp.https.proxyHost={host address}
 systemProp.http.proxyPort={host port}
 systemProp.https.proxyPort={host port}
 
+#### Gradle Setup (Eclipse)
+
+> 1. Import > Github URI
+2. Right click on the project > Configure > Convert to Gradle Projects
+3. Right click on the project > Refresh All
+
 ### Optional
 
 > org.gradle.daemon=true
