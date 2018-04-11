@@ -1,8 +1,9 @@
 #### Spring Boot with visualization using D3.js framework
-Display horizonal a horizontal chart:  
+
+* Display horizonal a horizontal chart:  
 ![Sample bargraph with values](https://github.com/delose/datavis/blob/master/images/datavis-horizonal_bargraph_1.PNG)
 
-By passing values through the controller and mapped into the view:
+* By passing values through the controller and mapped into the view:
 ```java
     @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
     public String home(@RequestParam(name="name", required=false, defaultValue="User") String name, Model model)
@@ -51,10 +52,10 @@ org.gradle.jvmargs=-Xmx1536m
 
 #### To restart the app (whenever new dependencies are added)
 
-> You can test actuator
-> ./gradlew build && java -jar build/libs/datavis-0.0.1-SNAPSHOT.jar
-> Once app is running,
-> 
+> You can test actuator  
+```
+./gradlew build && java -jar build/libs/datavis-0.0.1-SNAPSHOT.jar
+```
 
 #### Run 
 
@@ -64,10 +65,11 @@ org.gradle.jvmargs=-Xmx1536m
 
 ##### Actuator (production-grade services)
 
-> To test,
->  curl -i localhost:9001/actuator/health
->  curl -i localhost:9001/actuator/info
-
+> To test,  
+```
+curl -i localhost:9001/actuator/health
+curl -i localhost:9001/actuator/info
+```
 #### Build an executable JAR
 
 > java -jar build/libs/datavis-0.0.1-SNAPSHOT.jar
