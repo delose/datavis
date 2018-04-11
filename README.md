@@ -1,5 +1,5 @@
 #### Spring Boot with visualization using D3.js framework
-Display horizonal a horizontal chart:
+Display horizonal a horizontal chart:  
 ![Sample bargraph with values](https://github.com/delose/datavis/blob/master/images/datavis-horizonal_bargraph_1.PNG)
 
 By passing values through the controller and mapped into the view:
