@@ -49,21 +49,21 @@ org.gradle.jvmargs=-Xmx1536m
 #### List of Spring Boot 2.x Actuators
 
 > Refer to http://www.baeldung.com/spring-boot-actuators
-/auditevents – lists security audit-related events such as user login/logout. Also, we can filter by principal or type among others fields
-/beans – returns all available beans in our BeanFactory. Unlike /auditevents, it doesn’t support filtering
-/conditions – formerly known as /autoconfig, builds a report of conditions around auto-configuration
-/configprops – allows us to fetch all @ConfigurationProperties beans
-/env – returns the current environment properties. Additionally, we can retrieve single properties
-/health – summarises the health status of our application
-/heapdump – builds and returns a heap dump from the JVM used by our application
-/info – returns general information. It might be custom data, build information or details about the latest commit
-/loggers – enables us to query and modify the logging level of our application
-/metrics – details metrics of our application. This might include generic metrics as well as custom ones
-/scheduledtasks – provides details about every scheduled task within our application
-/threaddump – dumps the thread information of the underlying JVM
-/httptrace
-/error
-/mappings
+* /auditevents â€“ lists security audit-related events such as user login/logout. Also, we can filter by principal or type among others fields
+* /beans â€“ returns all available beans in our BeanFactory. Unlike /auditevents, it doesnâ€™t support filtering
+* /conditions â€“ formerly known as /autoconfig, builds a report of conditions around auto-configuration
+* /configprops â€“ allows us to fetch all @ConfigurationProperties beans
+* /env â€“ returns the current environment properties. Additionally, we can retrieve single properties
+* /health â€“ summarises the health status of our application
+* /heapdump â€“ builds and returns a heap dump from the JVM used by our application
+* /info â€“ returns general information. It might be custom data, build information or details about the latest commit
+* /loggers â€“ enables us to query and modify the logging level of our application
+* /metrics â€“ details metrics of our application. This might include generic metrics as well as custom ones
+* /scheduledtasks â€“ provides details about every scheduled task within our application
+* /threaddump â€“ dumps the thread information of the underlying JVM
+* /httptrace
+* /error
+* /mappings
  
 #### Purpose of actuators
 
@@ -71,6 +71,6 @@ org.gradle.jvmargs=-Xmx1536m
 In essence, Actuator brings production-ready features to our application.
 Monitoring our app, gathering metrics, understanding traffic or the state of our database becomes trivial with this dependency.
 The main benefit of this library is that we can get production grade tools without having to actually implement these features ourselves.
-Actuator is mainly used to expose operational information about the running application – health, metrics, info, dump, env, etc. It uses HTTP endpoints or JMX beans to enable us to interact with it.
+Actuator is mainly used to expose operational information about the running application â€“ health, metrics, info, dump, env, etc. It uses HTTP endpoints or JMX beans to enable us to interact with it.
 Once this dependency is on the classpath several endpoints are available for us out of the box. As with most Spring modules, we can easily configure or extend it in many ways.
 
