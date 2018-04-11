@@ -1,9 +1,26 @@
 #### Spring Boot with visualization using D3.js framework
 Display horizonal a horizontal chart:
-![Sample bargraph with values](https://delose.github.com/images/datavis-horizonal_bargraph_1.jpg)
+![Sample bargraph with values](https://delose.github.com/images/datavis-horizonal_bargraph_1.png)
 
-Values are passed through the controller and mapped into the view
-![Values passed through contoller](https://delose.github.com/images/datavis-controller_attribute_1.jpg)
+By passing values through the controller and mapped into the view:
+```java
+    @RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+    public String home(@RequestParam(name="name", required=false, defaultValue="User") String name, Model model)
+            throws ServletException, IOException {
+        model.addAttribute("name", name);
+        List<Integer> array = new ArrayList<Integer>();
+        array.add(100);
+        array.add(200);
+        array.add(300);
+        array.add(400);
+        array.add(100);
+        array.add(200);
+        array.add(300);
+        array.add(400);
+        model.addAttribute("data", array);
+        return "dashboard/dashboard";
+    }
+```
 
 #### Installation
 
