@@ -28,11 +28,13 @@ Generated in http://start.spring.io/
 
 #### Proxy
 
-> Make sure to add proxy details in gradle.properties (if needed)
+> Make sure to add proxy details in gradle.properties (if needed)  
+```
 systemProp.http.proxyHost={host address}
 systemProp.https.proxyHost={host address}
 systemProp.http.proxyPort={host port}
 systemProp.https.proxyPort={host port}
+```
 
 #### Gradle Setup (Eclipse)
 
