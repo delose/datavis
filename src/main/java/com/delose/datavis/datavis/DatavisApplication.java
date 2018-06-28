@@ -10,5 +10,5 @@ public class DatavisApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DatavisApplication.class, args);
-	}
+	} 
 }
